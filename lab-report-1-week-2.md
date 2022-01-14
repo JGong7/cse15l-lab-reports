@@ -1,13 +1,18 @@
 # Week 2 Lab Report: Tutorial for Remote Access
 ## By Jerry Gong
+
+
 > **Part 1: Installing Visual Studio Code**
+
 
 * Go to the [Visual Studio Code website](https://code.visualstudio.com/), then follow the instructions to download and install.
 * Once you complete, you should be able to open VScode with a window like this:
 
   ![image](part1.png)
- 
+
+
  > **Part 2: Remotely Connecting**
+
 
 * If you're on Windows, go to [Install OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) and install this program called OpenSSH which is capable of connect your computer to other computers.
 * Then, look up your own account for CSE15L by going to [account lookup](https://sdacs.ucsd.edu/~icc/index.php).
@@ -24,7 +29,9 @@
 
     ![image](part2.png)
 
+
 > **Part 3: Trying Some Commands**
+
 
 * Commands can be ran both on your computer and on the remote computer after ssh-ing. Below are some useful commands to try out!
 
@@ -43,8 +50,10 @@
 * Running commands in the terminal should look like this:
 
     ![image](part3.png)
-    
+
+
 > **Part 4: Moving FIles with `scp`**
+
 
 * An important step in working remotely is being able to copy files between the computers connected. The command that does this is called `scp`, and we always input this command from the client(from your computer not logged in `ieng6`). 
 * To try out this command, first create a file on your computer and put any contents into it
@@ -67,8 +76,10 @@
 * You'll be prompted for a password just like when you log in. Then, log into ieng6 with ssh again and use `ls`, you'll see the file in your remote directory, and now you should be able to run the file with commands `java` and `javac`. It should look like:
  
     ![image](part4.png)
-    
+
+
 > **Part 5: Setting an SSH Key**
+
 
 * It can be frustrating sometimes when we have to type our password everytime we log in or run commands to a remote server. In this case, there is a great solution - `ssh` keys.
 * The idea behind it is a program called `ssh-keygen`. It creates a pair of files called the public key and private key. After copying the public key to a particular location on the server, and the private key in a location on the client, the `ssh` command will be able to use this pair of files instead of your password.
@@ -86,7 +97,9 @@
     
     ![image](part5(2).png)
 
+
 > **Part 6: Optimizing Remote Running**
+
 
 * There are even more ways to make our remote running experience more convenient. Examples include:
     
