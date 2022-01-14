@@ -74,26 +74,13 @@
 * The idea behind it is a program called `ssh-keygen`. It creates a pair of files called the public key and private key. After copying the public key to a particular location on the server, and the private key in a location on the client, the `ssh` command will be able to use this pair of files instead of your password.
 * Below is what the setup should look like:
 
-    ```
-    # on client (your computer)
-    $ ssh-keygen
-    Generating public/private rsa key pair.
-    Enter file in which to save the key (C:\Users\embar/.ssh/id_rsa): C:\Users\embar/.ssh/id_rsa
-    Enter passphrase (empty for no passphrase): 
-    Enter same passphrase again: 
-    Your identification has been saved in C:\Users\embar/.ssh/id_rsa
-    Your public key has been saved in C:\Users\embar/.ssh/id_rsa.pub
-    The key fingerprint is:
-    SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
-    The key's randomart image is:
-    +---[RSA 3072]----+
-    |                 |
-    |       . . + .   |
-    |      . . B o .  |
-    |     . . B * +.. |
-    |      o S = *.B. |
-    |       = = O.*.*+|
-    |        + * *.BE+|
-    |           +.+.o |
-    |             ..  |
-    +----[SHA256]-----+
+    ![image](part5.png)
+    
+* It means that we already created two new files: the private key (in the file `id_rsa`) and the public key (in the file `id_rsa.pub`), stored in the `.ssh` directory on your computer.
+* Now we have to copy the public key to the `.ssh` directory on the server
+* First, log in into your account via ssh and make a directory by using `mkdir .ssh`.
+* Then log out and type the command(replace with your own path and account)
+    `scp  C:\Users\embar/.ssh/id_rsa.pub. cs15lwi22arq@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+    
+* After this step, you should be able to log in without a password.
+    
