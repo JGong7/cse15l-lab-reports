@@ -39,3 +39,29 @@
     `ls -t` - Lists the files in order of the time when they were last modified.
     
     `cp ~` - Copies files or group of files or directory.
+  
+* Running commands in the terminal should look like this:
+
+    ![image](part3.png)
+    
+> **Part 4: Moving FIles with `scp`**
+
+* An important step in working remotely is being able to copy files between the computers connected. The command that does this is called `scp`, and we always input this command from the client(from your computer not logged in `ieng6`). 
+* To try out this command, first create a file on your computer and put any contents into it
+* For example, create a file called `WhereAmI.java` and put the following contents in:
+    ```
+    class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+     }
+   }
+    ```
+    
+* Then, in the terminal from the directory of this file, run this command:(replace with your own username)
+
+    `scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/`
+    
+* You'll be prompted for a password just like when you log in. Then, log into ieng6 with ssh again and use `ls`, you'll see the file in your remote directory, and now you should be able to run the file with commands `java` and `javac`. It should look like:
