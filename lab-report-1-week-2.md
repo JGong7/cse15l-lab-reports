@@ -89,10 +89,11 @@
 > **Part 6: Optimizing Remote Running
 
 * There are even more ways to make our remote running experience more convenient. Examples include:
+    
     `ssh cs15lwi22arq@ieng6.ucsd.edu "ls"` - Writing a command in quotes at the end after an `ssh` command prompts it to directly run on the remote server then exit.
     
     ![image](part6.png)
     
     `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI` - We can use semicolons to run multiple commands on the same line.
-    * Use the up-arrow key to recall the last command that was run.
-    * Type faster!
+  * Use the up-arrow key to recall the last command that was run.
+  * Type faster!
