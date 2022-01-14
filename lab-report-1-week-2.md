@@ -65,3 +65,35 @@
     `scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/`
     
 * You'll be prompted for a password just like when you log in. Then, log into ieng6 with ssh again and use `ls`, you'll see the file in your remote directory, and now you should be able to run the file with commands `java` and `javac`. It should look like:
+ 
+    ![image](part4.png)
+    
+> **Part 5: Setting an SSH Key**
+
+* It can be frustrating sometimes when we have to type our password everytime we log in or run commands to a remote server. In this case, there is a great solution - `ssh` keys.
+* The idea behind it is a program called `ssh-keygen`. It creates a pair of files called the public key and private key. After copying the public key to a particular location on the server, and the private key in a location on the client, the `ssh` command will be able to use this pair of files instead of your password.
+* Below is what the setup should look like:
+
+    ```
+    # on client (your computer)
+    $ ssh-keygen
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (C:\Users\embar/.ssh/id_rsa): C:\Users\embar/.ssh/id_rsa
+    Enter passphrase (empty for no passphrase): 
+    Enter same passphrase again: 
+    Your identification has been saved in C:\Users\embar/.ssh/id_rsa
+    Your public key has been saved in C:\Users\embar/.ssh/id_rsa.pub
+    The key fingerprint is:
+    SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+    The key's randomart image is:
+    +---[RSA 3072]----+
+    |                 |
+    |       . . + .   |
+    |      . . B o .  |
+    |     . . B * +.. |
+    |      o S = *.B. |
+    |       = = O.*.*+|
+    |        + * *.BE+|
+    |           +.+.o |
+    |             ..  |
+    +----[SHA256]-----+
