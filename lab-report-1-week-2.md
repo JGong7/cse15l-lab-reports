@@ -86,7 +86,7 @@
     
     ![image](part5(2).png)
 
-> **Part 6: Optimizing Remote Running
+> **Part 6: Optimizing Remote Running**
 
 * There are even more ways to make our remote running experience more convenient. Examples include:
     
