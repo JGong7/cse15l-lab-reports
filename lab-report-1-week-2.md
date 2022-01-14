@@ -20,3 +20,22 @@
     RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
     Are you sure you want to continue connecting (yes/no/[fingerprint])?`
 * Say yes to this message and give password to continue logging in.
+* When you successful log in, your terminal should look something like this:
+
+    ![image](part2.png)
+
+> **Part 3: Trying Some Commands**
+
+* Commands can be ran both on your computer and on the remote computer after ssh-ing. Below are some useful commands to try out!
+
+    `cd ~` - Change directory.
+    
+    `ls` - Lists all files in the current directory except for hidden files.
+    
+    `ls -a` - Lists all files including hidden files(files with names beginning with a dot).
+    
+    `ls -l` - Gives a long listing of all files.
+    
+    `ls -t` - Lists the files in order of the time when they were last modified.
+    
+    `cp ~` - Copies files or group of files or directory.
