@@ -113,4 +113,4 @@
 * I also tried to make a local change to WhereAmI.java and save it to remote server
 
     ![image](11.png)
-  * I have all the commands I needed stored in a plain text file. The process involved making a change to WhereAmI.java(3 keystrokes) and copying and running the commmands(9 keystrokes). Although I did not keep it under 10 keystrokes, the whole process was still more pleasant than having to type out all the commands.
+  * The process involved making a change to WhereAmI.java(3 keystrokes) and running the commands(6 keystrokes). I used up-arrow key to reuse my previous commands. I did keep the keystrokes under 10, and it was a pleasant experience than typing all commands.
