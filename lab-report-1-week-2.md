@@ -110,3 +110,7 @@
     `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI` - We can use semicolons to run multiple commands on the same line.
   * Use the up-arrow key to recall the last command that was run.
   * Type faster!
+* I also tried to make a local change to WhereAmI.java and save it to remote server
+
+    ![image](final.png)
+  * I have all the commands I needed stored in a plain text file. The process involved making a change to WhereAmI.java(3 keystrokes) and copying and running the commmands(9 keystrokes). Although I did not keep it under 10 keystrokes, the whole process was still more pleasant than having to type out all the commands.
