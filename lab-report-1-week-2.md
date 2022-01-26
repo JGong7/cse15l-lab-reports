@@ -2,7 +2,7 @@
 ## By Jerry Gong
 
 
-> **Part 1: Installing Visual Studio Code**
+## **Part 1: Installing Visual Studio Code**
 
 
 * Go to the [Visual Studio Code website](https://code.visualstudio.com/), then follow the instructions to download and install.
@@ -11,7 +11,7 @@
   ![image](part1.png)
 
 
- > **Part 2: Remotely Connecting**
+## **Part 2: Remotely Connecting**
 
 
 * If you're on Windows, go to [Install OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) and install this program called OpenSSH which is capable of connect your computer to other computers.
@@ -30,7 +30,7 @@
     ![image](part2.png)
 
 
-> **Part 3: Trying Some Commands**
+## **Part 3: Trying Some Commands**
 
 
 * Commands can be ran both on your computer and on the remote computer after ssh-ing. Below are some useful commands to try out!
@@ -52,7 +52,7 @@
     ![image](part3.png)
 
 
-> **Part 4: Moving FIles with `scp`**
+## **Part 4: Moving FIles with `scp`**
 
 
 * An important step in working remotely is being able to copy files between the computers connected. The command that does this is called `scp`, and we always input this command from the client(from your computer not logged in `ieng6`). 
@@ -78,7 +78,7 @@
     ![image](part4.png)
 
 
-> **Part 5: Setting an SSH Key**
+## **Part 5: Setting an SSH Key**
 
 
 * It can be frustrating sometimes when we have to type our password everytime we log in or run commands to a remote server. In this case, there is a great solution - `ssh` keys.
@@ -98,7 +98,7 @@
     ![image](part5(2).png)
 
 
-> **Part 6: Optimizing Remote Running**
+## **Part 6: Optimizing Remote Running**
 
 
 * There are even more ways to make our remote running experience more convenient. Examples include:
