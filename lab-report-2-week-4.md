@@ -7,7 +7,7 @@
 ![image](2pic1.png)
 **Link to the test file for a failure-inducing input that prompted you to make that change:**
 
-[test2.md](https://github.com/JGong7/markdown-parse/edit/main/test2.md)
+[test2.md](https://github.com/JGong7/markdown-parse/blob/main/test2-file.md?plain=1)
 
 **Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history)**
 
@@ -40,7 +40,7 @@ The failure-inducing input has a link at the first line of the markdown file. Th
 ![image](2pic5.png)
 **Link to the test file for a failure-inducing input that prompted you to make that change**
 
-[test4.md](https://github.com/JGong7/markdown-parse/blob/main/test4.md)
+[test4.md](https://github.com/JGong7/markdown-parse/blob/main/test4-file.md)
 
 **Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history)**
 
