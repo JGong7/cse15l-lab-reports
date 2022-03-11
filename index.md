@@ -8,3 +8,5 @@ By Jerry Gong
 [Report 3](https://jgong7.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 
 [Report 4](https://jgong7.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
+
+[Report 5](https://jgong7.github.io/cse15l-lab-reports/lab-report-5-week-10.html)
